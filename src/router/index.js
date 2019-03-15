@@ -14,6 +14,7 @@ import Two from '@/components/Two.vue'
 import Auto from '@/components/Auto.vue'
 import R from '@/components/R.vue'
 import Parent from '@/components/Parent.vue'
+import Clipboard from '@/components/Clipboard.vue'
 
 Vue.use(Router)
 
@@ -91,6 +92,11 @@ export default new Router({
       path: '/p',
       name: 'Parent',
       component: Parent
+    },
+    {
+      path: '/clip',
+      name: 'Clipboard',
+      component: Clipboard
     }
   ]
 })
