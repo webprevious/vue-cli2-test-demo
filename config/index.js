@@ -11,14 +11,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-        target: 'http://wzh1.run.hzmantu.com',
-        // target: 'http://mantu-tech-micro-api-proxy.api.dev.hzmantu.com',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
+      
     },
 
     // Various Dev Server settings
