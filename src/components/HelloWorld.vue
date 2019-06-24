@@ -1,13 +1,10 @@
 <template>
   <div class="hello">
-    <el-row v-if="false">
+    <el-row>
       <el-col :span="12"><div class="bg-purple">1</div></el-col>
       <el-col :span="12"><div class="bg-purple-light">1</div></el-col>
       <el-col :span="24"><el-button type="success" @click="clickMe">默认按钮</el-button></el-col>
       <el-col :span="24"><el-button type="danger" @click="clickMeFor">for默认按钮</el-button></el-col>
-    </el-row>
-    <el-row>
-      <button><i class="iconfont icon-file_location"></i>nihao</button>
     </el-row>
   </div>
 </template>

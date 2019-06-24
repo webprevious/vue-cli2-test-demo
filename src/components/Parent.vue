@@ -8,7 +8,6 @@
       <div slot="mm">
         mmmmm
       </div>
-      <div v-slot:nnn></div>
     </son>
   </div>
 </template>
