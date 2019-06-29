@@ -1,16 +1,5 @@
 <template>
   <div>
-    <!-- <el-row class="head">
-      <headtop></headtop>
-    </el-row>
-    <el-row>
-      <el-col :span="4">
-        <navgator></navgator>
-      </el-col>
-      <el-col :span="20" class="router-view">
-        <router-view></router-view>
-      </el-col>
-    </el-row> -->
     <router-view></router-view>
   </div>
 </template>
