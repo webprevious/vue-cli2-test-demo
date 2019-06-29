@@ -15,6 +15,10 @@ import Auto from '@/components/Auto.vue'
 import R from '@/components/R.vue'
 import Parent from '@/components/Parent.vue'
 import Clipboard from '@/components/Clipboard.vue'
+import KeepAliveCom from '@/views/keep-alive/KeepAliveCom.vue'
+import home from '@/views/keep-alive/views/home.vue'
+import about from '@/views/keep-alive/views/about.vue'
+import my from '@/views/keep-alive/views/my.vue'
 
 Vue.use(Router)
 
@@ -97,6 +101,29 @@ export default new Router({
       path: '/clip',
       name: 'Clipboard',
       component: Clipboard
+    },
+    {
+      path: '/keep',
+      name: 'Keep',
+      component: KeepAliveCom,
+      redirect: '/keep/home',
+      children: [
+        {
+          path: '/keep/home',
+          component: home
+        },
+        {
+          path: '/keep/about',
+          component: about
+        },
+        {
+          path: '/keep/my',
+          component: my
+        }
+      ]
     }
-  ]
+  ],
+  scrollBehavior (to, from, position) {
+    return { x: 0, y: 0 }
+  }
 })
