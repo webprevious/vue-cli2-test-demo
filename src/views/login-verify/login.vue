@@ -6,7 +6,7 @@
         <el-input v-model="password" placeholder="密码" class="input"></el-input>
         <el-button type="primary" class="btn" @click="goTo">登录</el-button>
         <el-button class="btn">还没有账号?</el-button>
-        <button id="TencentCaptcha" data-appid="2049380082" data-cbfn="callback" type="button">按钮</button>
+        <el-button class="btn" id="TencentCaptcha" data-appid="2049380082" data-cbfn="callback" type="button">腾讯防水墙</el-button>
       </div>
     </el-col>
   </el-row>
@@ -38,7 +38,6 @@ export default {
     }
   },
   created () {
-    // console.log(TencentCaptcha)
     const s = document.createElement('script')
     s.type = 'text/javascript'
     s.src = 'https://ssl.captcha.qq.com/TCaptcha.js'

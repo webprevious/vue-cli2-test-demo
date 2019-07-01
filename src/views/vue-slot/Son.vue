@@ -1,9 +1,8 @@
 <template>
   <div>
     <div class="red">子组件</div>
-    <slot name="hh"></slot>
-    <slot name="mm"></slot>
-    <slot name="nnn"></slot>
+    <slot name="one"></slot>
+    <slot name="two"></slot>
   </div>
 </template>
 

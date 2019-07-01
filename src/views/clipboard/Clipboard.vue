@@ -1,7 +1,8 @@
 <template>
   <div>
     <input id="foo" value="https://github.com/zenorocha/clipboard.js.git">
-    <button data-clipboard-target="#foo" ref="copy" @click="copyClick">复制到切板</button>
+    <div id="test">12345</div>
+    <button data-clipboard-target="#test" ref="copy" @click="copyClick">复制到切板</button>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
     }
   },
   methods: {
+    // 剪切板回调函数
     copyClick () {
       this.copyBtn.on('success', function () {
         console.log('success')
